@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- #external CSS -->
+    
+    <!-- #internal CSS -->
+        <!-- <link rel="stylesheet" href="one.css"> -->
+    <!-- <style>
+        p{
+            background-color:aqua;
+         }
+          /*to apply internal css over inline we can use !important as  */
+        h1{
+            color:green !important;
+        }
+        /* order also matters the one which comes last will be applied over declared above it.
+        example: p will have aqua color not one which is mentioned in .css file because p{'aqua'} is below linked .css file */
+    </style>
+  -->
+    <style>
+        p{
+         color:brown;
+        }
+        #article1{
+            background-color: green;
+        }
+        .paraclass1{
+            background-color: yellow;
+        }
+        p,article{
+            width:500px;
+            text-align:center;
+        }
+        p.paraclass1{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- #inline,internal and external css example -->
+     <!-- #inline css 
+      *inline css has highest priority than internal and external CSS-->
+     <!-- <h1 style="background-color: yellow;">Welcome to CSS learning.</h1>
+     <p style="background-color: darkorchid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, consequuntur.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias veniam porro temporibus quidem. Soluta aliquam ut quibusdam repellendus expedita?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quam quis doloribus in consectetur labore soluta dicta quisquam magni saepe totam excepturi iure rerum voluptates aliquam iusto cupiditate. Nihil molestias odio laboriosam error ducimus magnam maxime ipsa vero, beatae, deleniti, distinctio similique aliquam possimus repellendus at. Vel cum ab aliquid!</p> -->
+<h1>welcome to CSS lectures.</h1>
+<p class="paraclass1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quas.</p>
+<p class="paraclass1">my name is lagnesh.</p>
+<p>My name is lagnesh pro max.</p>
+<article id="article1" class="paraclass1">Lorem ipsum, dolor sit amet
+     consectetur adipisicing elit. Consequatur eligendi modi suscipit vitae omnis cum distinctio aspernatur pariatur eveniet error eos quaerat neque nesciunt quidem nihil consectetur, ipsam possimus nobis.</article>
+</body>
+</html>

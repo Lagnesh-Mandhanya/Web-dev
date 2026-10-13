@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- without box sizing:border box size of box with 
+     padding expands.
+     but with box sizing: border box box size remains same and internal content shrinks. -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+         .box2{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 20px;
+        }
+        /* inline-block element behaves as inline with
+        custom height,width,margin */
+        .box3{
+            display:inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div>illistrution box sizing:border box</div>
+    <div class="box">learning box sizing: border box</div>
+    <div class="box1">learning box sizing: border box</div>
+    <div class="box2">learning box sizing: border box</div>
+    <span class="box3">i am lagnesh.</span>
+    <span class="box3">i am lagnesh.</span>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s, height 4s, background-color 3s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+}
+ .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+
+            /* transition-property: all;
+            transition-duration: 4s;
+            /* transition-delay: 1s; 
+            transition-timing-function: ease-out;
+            
+            */
+
+
+            /* shorthand notation */
+            /* transition: all 2s ease-in 5s;
+             */
+
+            transition: width 2s, height 5s,background-color 2s;
+        }
+
+
+        .box:hover{
+            width: 1800px;
+            height: 900px;
+            background-color: blue;
+        }
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+ <div class="box">
+
+    </div>
+
+</body>
+</html>
